@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <style>
+
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+
+            .container{
+                padding: 50px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            button {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                width: 30%;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                font-size: 20px;
+                text-transform: uppercase;
+                display: inline;
+
+            }
+
+            .btngrp button{
+                display: table;
+                padding: 10px 24px;
+                float: left;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+
+            input{
+                width: 50%;
+                height: 50px;
+                text-indent: 20px;
+                font-size: 20px;
+                border-radius: 10px;
+                outline: none;
+                border: 1px solid gray;
+            }
+           
+            .two{
+                padding-top: 50px;
+                padding-bottom: 50px;
+                width: 400px;
+                
+            }
+
+            .todo{
+                padding-top: 10px;
+                padding-bottom: 10px;
+                text-indent: 20px;
+                margin: 10px;
+                font-size: 25px;
+                font-weight: normal;
+                font-family: segoe UI;
+                box-shadow: 0 0 2px gray;
+                border-radius: 10px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <p style="text-align: center; margin-top: 10px; font-size: 70px;">Calculator</p>
+        <div class="container">
+
+            <input  placeholder="Number 1..."  id="inp1"/>
+            <input  placeholder="Number 2..."  id="inp2"/>
+
+            <div class="btngrp" style="width: 50%;">
+                <button onclick="add()" style="width: 25%;">+</button>
+                <button onclick="sub()" style="width: 25%;">-</button>
+                <button onclick="mul()" style="width: 25%;">x</button>
+                <button onclick="div()" style="width: 25%;">/</button>
+                <br>
+                <button onclick="remove()" style="width: 50%;">Clear</button>
+           
+            </div>
+           
+            <div id="two" class="two">
+
+            </div>
+           
+        </div>
+
+
+        <script src="cal.js"></script>
+    </body>
+</html>
